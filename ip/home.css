@@ -1,3 +1,30 @@
+@keyframes navbarbackground {
+  from {background-color: orange ;}
+  to {background-color: white;}
+}
+
+@keyframes animateheading {
+  0% {
+      width: 0px;
+      height: 0px;
+  }
+  30% {
+      width: 50px;
+      height: 0px;
+  }
+}
+
+.heading{
+  border-bottom: 5px solid white;
+  overflow: hidden;
+  animation: animateheading 2s linear forwards;
+}
+.navbar{
+  background-color: white;
+  animation-name: navbarbackground;
+  animation-duration: 4s;
+}
+
 body {
     background-image: url("mountains-55067_960_720.webp");
     background-size: cover;
@@ -16,10 +43,7 @@ body {
     text-align: left;
   }
   
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
+ 
   
   header p {
     font-size: 16px;
