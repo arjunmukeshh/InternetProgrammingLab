@@ -1,6 +1,6 @@
 @keyframes navbarbackground {
-  from {background-color: orange ;}
-  to {background-color: white;}
+  from {background-color: white;}
+  to {background-color: #FFAD8B;}
 }
 
 @keyframes animateheading {
@@ -20,17 +20,32 @@
   animation: animateheading 2s linear forwards;
 }
 .navbar{
-  background-color: white;
+  background-color: #FFAD8B;
   animation-name: navbarbackground;
   animation-duration: 4s;
 }
 
+.dropdown{
+	display:none;
+	position:absolute;
+	z-index:1;
+	align:right;
+}
+.dropper{
+	align:right;
+}
+.dropper:hover .dropdown{
+	display:contents;
+}
+
 body {
-    background-image: url("mountains-55067_960_720.webp");
-    background-size: cover;
+   
     background-repeat: no-repeat;
+	background-image: url("tuxpi.com.1676873894.jpg");
+	    background-size: cover;
     font-family: Arial, sans-serif;
-    color: white;
+	font-weight:bold;
+    color: black;
     text-align: center;
   }
   
